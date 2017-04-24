@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin</title>
+    </head>
+    <body>
+        <% if(isAdmin) { %>
+            <h3>Chào admin</h3>
+        <% } else { %>
+            <h3>Mời đăng nhập</h3>
+        <% } %>
+    </body>
+</html>
+
+<!-- Nếu truyền isAdmin == true => <h3>Chào admin</h3>
+else => <h3>Mời đăng nhập</h3>
