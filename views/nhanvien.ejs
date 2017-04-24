@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nhan Vien</title>
+    </head>
+    <body>
+        <%= "<p>KHOAPHAM</p>" %>
+        <%- "<p>KHOAPHAM</p>" %>
+
+        <%- include('partials/header') %>
+        <% mang.forEach(e => { %>
+            <%- include('partials/row', { name: e.name, age: e.age }) %>
+        <% }); %>
+    </body>
+</html>
